@@ -1,0 +1,1602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationIcon>GETQUOTE.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E441E53-34F1-4093-8619-9AB848ADA97F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Bengal_MemberMaster.My.MyApplication</StartupObject>
+    <RootNamespace>Bengal_MemberMaster</RootNamespace>
+    <AssemblyName>Bengal_MemberMaster</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Bengal_MemberMaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Bengal_MemberMaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.FPSpreadADO, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KGAMEMBER_1104_623P\bin\Debug\AxInterop.FPSpreadADO.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.FPUSpreadADO">
+      <HintPath>..\..\..\Source\OutRan_Club\CLUBMEMBER29042013\bin\AxInterop.FPUSpreadADO.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSFlexGridLib, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PankajSir\Bengal_MemberMaster_0508\Bengal_MemberMaster_0508\Bengal_MemberMaster_0508\bin\Debug\AxInterop.MSFlexGridLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Interop.FPSpread, Version=2.5.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\24062013laptop\23062013_1100PM\23062013_1100PM\MEMBERMODULE_TRANS_REPORTS\Final\MEMBERMODULE_TRANS_REPORTS\MEMBERMODULE_TRANS_REPORTS\bin\Debug\Interop.FPSpread.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FPSpreadADO, Version=7.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\KGAMEMBER_1104_623P\bin\Debug\Interop.FPSpreadADO.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.FPUSpreadADO">
+      <HintPath>..\..\..\OUTRAN\CLUBMEMBER29042013\bin\Interop.FPUSpreadADO.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\OUTRAN\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\EMC_Member\EMC_Member\bin\Debug\Microsoft.Office.Interop.Outlook.dll</HintPath>
+    </Reference>
+    <Reference Include="MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\24062013laptop\23062013_1100PM\23062013_1100PM\MEMBERMODULE_TRANS_REPORTS\Final\MEMBERMODULE_TRANS_REPORTS\MEMBERMODULE_TRANS_REPORTS\bin\Debug\MSDATASRC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AUTHORISATION.designer.vb">
+      <DependentUpon>AUTHORISATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHORISATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\billing.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>billing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\billing12.vb">
+      <DependentUpon>billing12.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\BLK_CR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLK_CR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\BLK_DR.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLK_DR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CCLbilling.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CCLbilling.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CALBil.vb">
+      <DependentUpon>CALBil.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CCLCry_Det.vb">
+      <DependentUpon>CCLCry_Det.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CCLCry_Det_MLA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CCLCry_Det_MLA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CCLReminder1.vb">
+      <DependentUpon>CCLReminder1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CCLCry_MemberStatusHistory_report.vb">
+      <DependentUpon>CCLCry_MemberStatusHistory_report.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CRY_GOLFMONTHBILLSUMMARY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRY_GOLFMONTHBILLSUMMARY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Monthdispatch.vb">
+      <DependentUpon>Cry_Monthdispatch.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Crpt_Monthbillchklst.vb">
+      <DependentUpon>Crpt_Monthbillchklst.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\DataSetMonthBillng.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMonthBillng.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\GSTSUBSBILLDETAILS.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GSTSUBSBILLDETAILS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\MlaReminder11.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MlaReminder1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\MlaReminder1_ltt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MlaReminder1_ltt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\NRICCLbilling.vb">
+      <DependentUpon>NRICCLbilling.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_AccountsPosting.vb">
+      <DependentUpon>Cry_AccountsPosting.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Allcatoutlet.vb">
+      <DependentUpon>Cry_Allcatoutlet.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_AFFILIATEDCLUBDETAILSmaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_AFFILIATEDCLUBDETAILSmaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_arrear.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_arrear.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_billdetails_new.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_billdetails_new.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\cry_billsdetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cry_billsdetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Categoryconversion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Categoryconversion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_categorymaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_categorymaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_chargemaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_chargemaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Citymaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Citymaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Commitee.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Commitee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_contact_stikers.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_contact_stikers.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_contact_stikers1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_contact_stikers1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_contact_stikers2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_contact_stikers2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_contact_stikers3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_contact_stikers3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Corporatemaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Corporatemaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Countrymaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Countrymaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Countrymaster1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Countrymaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Creditadvice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Creditadvice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Debitadvice.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Debitadvice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Debitcredit.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Debitcredit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_dependency.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_dependency.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Designationmaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Designationmaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Det.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Det.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MaritalStatusmaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MaritalStatusmaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MEMBERACTDEACT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MEMBERACTDEACT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_memberdetails_doj.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_memberdetails_doj.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MEMBERDOB.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MEMBERDOB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MEMBERDOW.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MEMBERDOW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Memberledger.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Memberledger.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Memberledger1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Memberledger1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MemberMaster_New.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MemberMaster_New.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_membership_doj_summary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_membership_doj_summary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MemberStatusdetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MemberStatusdetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MemberStatusHistory_report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MemberStatusHistory_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_MemberStatus_summay.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_MemberStatus_summay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\cry_memberwisesub.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cry_memberwisesub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_member_expired_details_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_member_expired_details_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_member_expiry_details_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_member_expiry_details_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Member_List_Photo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Member_List_Photo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Member_List_Photo1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Member_List_Photo1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Member_List_Photo2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Member_List_Photo2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_member_termination_details_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_member_termination_details_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Memwisesubscriptiontagging.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Memwisesubscriptiontagging.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CRY_MONTHBILLANDSUMMARY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRY_MONTHBILLANDSUMMARY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Professionalmaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Professionalmaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Reasonmaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Reasonmaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Statemaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Statemaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Subcategorymaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Subcategorymaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_subscriptiondetails.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_subscriptiondetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_SUBSCRIPTIONMAST_master.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_SUBSCRIPTIONMAST_master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CRY_SUBSCRIPTIONTAGGING.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRY_SUBSCRIPTIONTAGGING.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\CRY_SUBSCRIPTIONTAGGING1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRY_SUBSCRIPTIONTAGGING1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Subscription_Det2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Subscription_Det2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Cry_Titlemaster.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cry_Titlemaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\MONTH_BILL1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MONTH_BILL1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Remainder1Summary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Remainder1Summary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Reminder1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reminder1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Reminder2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reminder2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Reminder3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reminder3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\roombill.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>roombill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRYSTAL REPORT\Subscription_Summary.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Subscription_Summary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATETIMECLASS\CalendarCell.vb" />
+    <Compile Include="DATETIMECLASS\CalendarColumn.vb" />
+    <Compile Include="DATETIMECLASS\CalendarEditingControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EXPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLOBAL\GlobalClass.vb" />
+    <Compile Include="GLOBAL\GlobalFunction.vb" />
+    <Compile Include="GLOBAL\GlobalVariables.vb" />
+    <Compile Include="LIST_OPERATION\LIST_OPERATION1.designer.vb">
+      <DependentUpon>LIST_OPERATION1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIST_OPERATION\LIST_OPERATION1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\CompanyList1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\shutdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\CORPORATES_MASTER.designer.vb">
+      <DependentUpon>CORPORATES_MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\CORPORATES_MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\DESIGNATION_MASTER.designer.vb">
+      <DependentUpon>DESIGNATION_MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\DESIGNATION_MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\ElectionMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\Frm_ECSSetup.Designer.vb">
+      <DependentUpon>Frm_ECSSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\Frm_ECSSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MEMMASTER.Designer.vb">
+      <DependentUpon>FRM_MEMMASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MEMMASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_AffiliatedClubDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_categorymaster.designer.vb">
+      <DependentUpon>frm_mkga_categorymaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_categorymaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_CHARGEMASTER.designer.vb">
+      <DependentUpon>FRM_MKGA_CHARGEMASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_CHARGEMASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_CityMaster.designer.vb">
+      <DependentUpon>frm_mkga_CityMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_CityMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_countrymaster.designer.vb">
+      <DependentUpon>frm_mkga_countrymaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_countrymaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_REASONMASTER.designer.vb">
+      <DependentUpon>FRM_MKGA_REASONMASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_REASONMASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_Statemaster.designer.vb">
+      <DependentUpon>frm_mkga_Statemaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_Statemaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_subcategorymaster.designer.vb">
+      <DependentUpon>frm_mkga_subcategorymaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\frm_mkga_subcategorymaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_SUBSCRIPTION MASTER.designer.vb">
+      <DependentUpon>FRM_MKGA_SUBSCRIPTION MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_SUBSCRIPTION MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\FRM_MKGA_SubscriptionTagging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\MARTIALSTATUS_MASTER.designer.vb">
+      <DependentUpon>MARTIALSTATUS_MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\MARTIALSTATUS_MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\PROFESSION_MASTER.designer.vb">
+      <DependentUpon>PROFESSION_MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\PROFESSION_MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\SALUTATION_MASTER.designer.vb">
+      <DependentUpon>SALUTATION_MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\SALUTATION_MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MASTERS\SMSMaster.designer.vb">
+      <DependentUpon>SMSMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MASTERS\SMSMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPARENT\EXPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPARENT\MDIParent1.designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPARENT\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report.designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDesigner.designer.vb">
+      <DependentUpon>ReportDesigner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDesigner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\DEPENDET.designer.vb">
+      <DependentUpon>DEPENDET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DEPENDET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_ACCOUNTPOSTING.Designer.vb">
+      <DependentUpon>FRM_ACCOUNTPOSTING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\FRM_ACCOUNTPOSTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_CCLOUTLET.Designer.vb">
+      <DependentUpon>FRM_CCLOUTLET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\FRM_CCLOUTLET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_NRI_SUBSCRIPTIONPOSTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\Frm_Outstandingsms.Designer.vb">
+      <DependentUpon>Frm_Outstandingsms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\Frm_Outstandingsms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RBC_MEMBER_DOB_DOW_LIST.designer.vb">
+      <DependentUpon>FRM_RBC_MEMBER_DOB_DOW_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RBC_MEMBER_DOB_DOW_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_rkga_MemberAddressList.designer.vb">
+      <DependentUpon>frm_rkga_MemberAddressList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_rkga_MemberAddressList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_rkga_MemberDirectory.designer.vb">
+      <DependentUpon>frm_rkga_MemberDirectory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_rkga_MemberDirectory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RKGA_MEMCREDEB ADVICE.designer.vb">
+      <DependentUpon>FRM_RKGA_MEMCREDEB ADVICE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RKGA_MEMCREDEB ADVICE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RKGA_SUBSCRIPTION TAGGING.designer.vb">
+      <DependentUpon>FRM_RKGA_SUBSCRIPTION TAGGING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RKGA_SUBSCRIPTION TAGGING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RBC_MEMBERLEDGER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MMHELP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\FRM_RBC_MONTHBILLING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\OUTSTAND_MEMREP_LIST.designer.vb">
+      <DependentUpon>OUTSTAND_MEMREP_LIST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\OUTSTAND_MEMREP_LIST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\RFM_RKGA_SUBSCRIPTIONDETAILS.designer.vb">
+      <DependentUpon>RFM_RKGA_SUBSCRIPTIONDETAILS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\RFM_RKGA_SUBSCRIPTIONDETAILS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\RPT_MEMBERSTATUS_REPORT.designer.vb">
+      <DependentUpon>RPT_MEMBERSTATUS_REPORT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\RPT_MEMBERSTATUS_REPORT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\XLWorkbook.vb" />
+    <Compile Include="TRANSACTIONS\ACCOUNTSITEMTAGGING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\BULK_CR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\BULK_DR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\CommitteeTransaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\EMAILPOSTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\frm_tkga_CategoryConversion.designer.vb">
+      <DependentUpon>frm_tkga_CategoryConversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\frm_tkga_CategoryConversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\FRM_TKGA_SUBSCRIPTIONPOSTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\FRM_TRANS_MEMBERACTIVATION.designer.vb">
+      <DependentUpon>FRM_TRANS_MEMBERACTIVATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\FRM_TRANS_MEMBERACTIVATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\FRM_TRANS_MEMBERDEACTIVATION.designer.vb">
+      <DependentUpon>FRM_TRANS_MEMBERDEACTIVATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TRANSACTIONS\FRM_TRANS_MEMBERDEACTIVATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\JournalRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\LOCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\Remaindereportlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRANSACTIONS\SendSms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWDET.designer.vb">
+      <DependentUpon>VIEWDET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWDET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEWHDR.designer.vb">
+      <DependentUpon>VIEWHDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VIEWHDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Web References\CalRef\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AUTHORISATION.resx">
+      <DependentUpon>AUTHORISATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\billing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>billing.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\billing12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>billing12.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\BLK_CR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BLK_CR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\BLK_DR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BLK_DR.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CCLbilling.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CCLbilling.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CALBil.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CALBil.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CCLCry_Det.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CCLCry_Det.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CCLCry_Det_MLA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CCLCry_Det_MLA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CCLReminder1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CCLReminder1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CCLCry_MemberStatusHistory_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CCLCry_MemberStatusHistory_report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CRY_GOLFMONTHBILLSUMMARY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRY_GOLFMONTHBILLSUMMARY.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Monthdispatch.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Monthdispatch.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Crpt_Monthbillchklst.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crpt_Monthbillchklst.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\GSTSUBSBILLDETAILS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GSTSUBSBILLDETAILS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\MlaReminder1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MlaReminder11.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\MlaReminder1_ltt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MlaReminder1_ltt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\NRICCLbilling.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NRICCLbilling.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_AccountsPosting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_AccountsPosting.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Allcatoutlet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Allcatoutlet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_AFFILIATEDCLUBDETAILSmaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_AFFILIATEDCLUBDETAILSmaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_arrear.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_arrear.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_billdetails_new.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_billdetails_new.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\cry_billsdetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cry_billsdetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Categoryconversion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Categoryconversion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_categorymaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_categorymaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_chargemaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_chargemaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Citymaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Citymaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Commitee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Commitee.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_contact_stikers.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_contact_stikers.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_contact_stikers1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_contact_stikers1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_contact_stikers2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_contact_stikers2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_contact_stikers3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_contact_stikers3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Corporatemaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Corporatemaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Countrymaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Countrymaster1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Creditadvice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Creditadvice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Debitadvice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Debitadvice.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Debitcredit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Debitcredit.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_dependency.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_dependency.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Designationmaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Designationmaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Det.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Det.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MaritalStatusmaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MaritalStatusmaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MEMBERACTDEACT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MEMBERACTDEACT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_memberdetails_doj.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_memberdetails_doj.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MEMBERDOB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MEMBERDOB.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MEMBERDOW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MEMBERDOW.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Memberledger.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Memberledger.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Memberledger1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Memberledger1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MemberMaster_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MemberMaster_New.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_membership_doj_summary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_membership_doj_summary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MemberStatusdetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MemberStatusdetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MemberStatusHistory_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MemberStatusHistory_report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_MemberStatus_summay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_MemberStatus_summay.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\cry_memberwisesub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cry_memberwisesub.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_member_expired_details_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_member_expired_details_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_member_expiry_details_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_member_expiry_details_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Member_List_Photo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Member_List_Photo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Member_List_Photo1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Member_List_Photo1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Member_List_Photo2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Member_List_Photo2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_member_termination_details_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_member_termination_details_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Memwisesubscriptiontagging.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Memwisesubscriptiontagging.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CRY_MONTHBILLANDSUMMARY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRY_MONTHBILLANDSUMMARY.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Professionalmaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Professionalmaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Reasonmaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Reasonmaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Statemaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Statemaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Subcategorymaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Subcategorymaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_subscriptiondetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_subscriptiondetails.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_SUBSCRIPTIONMAST_master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_SUBSCRIPTIONMAST_master.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CRY_SUBSCRIPTIONTAGGING.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRY_SUBSCRIPTIONTAGGING.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\CRY_SUBSCRIPTIONTAGGING1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRY_SUBSCRIPTIONTAGGING1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Subscription_Det2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Subscription_Det2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Cry_Titlemaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cry_Titlemaster.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\MONTH_BILL1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MONTH_BILL1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Remainder1Summary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Remainder1Summary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Reminder1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reminder1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Reminder2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reminder2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Reminder3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reminder3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\roombill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>roombill.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTAL REPORT\Subscription_Summary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Subscription_Summary.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXPORT.resx">
+      <DependentUpon>EXPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIST_OPERATION\LIST_OPERATION1.resx">
+      <DependentUpon>LIST_OPERATION1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\CompanyList1.resX" />
+    <EmbeddedResource Include="LOGIN\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\Welcome.resx">
+      <DependentUpon>Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\CORPORATES_MASTER.resx">
+      <DependentUpon>CORPORATES_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\DESIGNATION_MASTER.resx">
+      <DependentUpon>DESIGNATION_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\ElectionMaster.resx" />
+    <EmbeddedResource Include="MASTERS\Frm_ECSSetup.resx">
+      <DependentUpon>Frm_ECSSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MEMMASTER.resx">
+      <DependentUpon>FRM_MEMMASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MKGA_AffiliatedClubDetails.resx">
+      <DependentUpon>FRM_MKGA_AffiliatedClubDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\frm_mkga_categorymaster.resx">
+      <DependentUpon>frm_mkga_categorymaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MKGA_CHARGEMASTER.resx">
+      <DependentUpon>FRM_MKGA_CHARGEMASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\frm_mkga_CityMaster.resx">
+      <DependentUpon>frm_mkga_CityMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\frm_mkga_countrymaster.resx">
+      <DependentUpon>frm_mkga_countrymaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MKGA_REASONMASTER.resx">
+      <DependentUpon>FRM_MKGA_REASONMASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\frm_mkga_Statemaster.resx">
+      <DependentUpon>frm_mkga_Statemaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\frm_mkga_subcategorymaster.resx">
+      <DependentUpon>frm_mkga_subcategorymaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MKGA_SUBSCRIPTION MASTER.resx">
+      <DependentUpon>FRM_MKGA_SUBSCRIPTION MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\FRM_MKGA_SubscriptionTagging.resx">
+      <DependentUpon>FRM_MKGA_SubscriptionTagging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\MARTIALSTATUS_MASTER.resx">
+      <DependentUpon>MARTIALSTATUS_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\PROFESSION_MASTER.resx">
+      <DependentUpon>PROFESSION_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\SALUTATION_MASTER.resx">
+      <DependentUpon>SALUTATION_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\SMSMaster.resx">
+      <DependentUpon>SMSMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPARENT\EXPORT.resx">
+      <DependentUpon>EXPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPARENT\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDesigner.resx">
+      <DependentUpon>ReportDesigner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\DEPENDET.resx">
+      <DependentUpon>DEPENDET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_ACCOUNTPOSTING.resx">
+      <DependentUpon>FRM_ACCOUNTPOSTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_CCLOUTLET.resx">
+      <DependentUpon>FRM_CCLOUTLET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_NRI_SUBSCRIPTIONPOSTING.resx" />
+    <EmbeddedResource Include="REPORTS\Frm_Outstandingsms.resx">
+      <DependentUpon>Frm_Outstandingsms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_RBC_MEMBER_DOB_DOW_LIST.resx">
+      <DependentUpon>FRM_RBC_MEMBER_DOB_DOW_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_rkga_MemberAddressList.resx">
+      <DependentUpon>frm_rkga_MemberAddressList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_rkga_MemberDirectory.resx">
+      <DependentUpon>frm_rkga_MemberDirectory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_RKGA_MEMCREDEB ADVICE.resx">
+      <DependentUpon>FRM_RKGA_MEMCREDEB ADVICE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_RKGA_SUBSCRIPTION TAGGING.resx">
+      <DependentUpon>FRM_RKGA_SUBSCRIPTION TAGGING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_RBC_MEMBERLEDGER.resx">
+      <DependentUpon>FRM_RBC_MEMBERLEDGER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MMHELP.resx">
+      <DependentUpon>MMHELP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\FRM_RBC_MONTHBILLING.resx">
+      <DependentUpon>FRM_RBC_MONTHBILLING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\OUTSTAND_MEMREP_LIST.resx">
+      <DependentUpon>OUTSTAND_MEMREP_LIST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\RFM_RKGA_SUBSCRIPTIONDETAILS.resx">
+      <DependentUpon>RFM_RKGA_SUBSCRIPTIONDETAILS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\RPT_MEMBERSTATUS_REPORT.resx">
+      <DependentUpon>RPT_MEMBERSTATUS_REPORT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\ACCOUNTSITEMTAGGING.resx">
+      <DependentUpon>ACCOUNTSITEMTAGGING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\BULK_CR.resx">
+      <DependentUpon>BULK_CR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\BULK_DR.resx">
+      <DependentUpon>BULK_DR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\CommitteeTransaction.resx" />
+    <EmbeddedResource Include="TRANSACTIONS\EMAILPOSTING.resx">
+      <DependentUpon>EMAILPOSTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\frm_tkga_CategoryConversion.resx">
+      <DependentUpon>frm_tkga_CategoryConversion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\FRM_TKGA_SUBSCRIPTIONPOSTING.resx">
+      <DependentUpon>FRM_TKGA_SUBSCRIPTIONPOSTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\FRM_TRANS_MEMBERACTIVATION.resx">
+      <DependentUpon>FRM_TRANS_MEMBERACTIVATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\FRM_TRANS_MEMBERDEACTIVATION.resx">
+      <DependentUpon>FRM_TRANS_MEMBERDEACTIVATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\JournalRegister.resx">
+      <DependentUpon>JournalRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\LOCK.resx">
+      <DependentUpon>LOCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\Remaindereportlist.resx">
+      <DependentUpon>Remaindereportlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRANSACTIONS\SendSms.resx" />
+    <EmbeddedResource Include="VIEWDET.resx">
+      <DependentUpon>VIEWDET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEWHDR.resx">
+      <DependentUpon>VIEWHDR.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CRYSTAL REPORT\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet11.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSetMonthBillng.xsc">
+      <DependentUpon>DataSetMonthBillng.xsd</DependentUpon>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSetMonthBillng.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMonthBillng.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="CRYSTAL REPORT\DataSetMonthBillng.xss">
+      <DependentUpon>DataSetMonthBillng.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Web References\CalRef\AddContactResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\AddCustomerResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\DeleteSenderNameResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\gateway.wsdl" />
+    <None Include="Web References\CalRef\IncomingMessage.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\MessageStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\CalRef\SenderNames.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\SetDefaultSenderNameResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\TransferCreditsResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\UpdateContactResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\UpdateCustomerPasswordResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CalRef\UpdatePermissionsResults.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\111in1024res.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\Clear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\Delete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\excel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\Exit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\print.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\view.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlp_48help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUTTONS_PIC\400_F_9130045_3SaKfvCqFL4hRJm59cddsCnbx5YyqvYj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GETQUOTE.ICO" />
+    <None Include="Resources\bg.jpg" />
+    <None Include="Resources\images2.jpg" />
+    <None Include="Web References\CalRef\gateway.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://smsc.smsconnexion.com/api/gateway.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CalRef\</RelPath>
+      <UpdateFromURL>http://smsc.smsconnexion.com/api/gateway.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Bengal_MemberMaster_CalRef_Gateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Bengal_MemberMaster
+</name>
+</assembly>
+<members>
+<member name="P:Bengal_MemberMaster.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources._111in1024res">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources._400_F_9130045_3SaKfvCqFL4hRJm59cddsCnbx5YyqvYj">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources._Exit">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.Clear">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.Delete">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.excel">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.hlp_48help">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.print">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Bengal_MemberMaster.My.Resources.Resources.view">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Bengal_MemberMaster.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_membermasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MM_MEMDETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTINGDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_countrymasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_statemasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CitymasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_chargemasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ReasonMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_TitleMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ProfessionalMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_MaritalStatusMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_DesignationMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CorporateMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.vw_affiliatedclubdetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_subscriptiontaggingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membertypeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBSCRIPTIONMASTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_membertypeconversionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_MEMBERLEDGERDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SubCategorymasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SubscriptionTaggingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTING1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.journalentryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBS_SUMMARYDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membermasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_POS_SUMMARYDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTION_DETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.bengal_monthbillDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_BILLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_trialDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.View_DRCR_SUMDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEM_POS_DETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_WBSTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_membermasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MM_MEMDETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTINGRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_countrymasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_statemasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CitymasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_chargemasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ReasonMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_TitleMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ProfessionalMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_MaritalStatusMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_DesignationMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CorporateMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.vw_affiliatedclubdetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_subscriptiontaggingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membertypeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBSCRIPTIONMASTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_membertypeconversionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_MEMBERLEDGERRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SubCategorymasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SubscriptionTaggingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTING1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.journalentryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBS_SUMMARYRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membermasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_POS_SUMMARYRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTION_DETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.bengal_monthbillRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_BILLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_trialRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.View_DRCR_SUMRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEM_POS_DETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_WBSTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_membermasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MM_MEMDETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTINGRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_countrymasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_statemasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CitymasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_chargemasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ReasonMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_TitleMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_ProfessionalMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_MaritalStatusMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_DesignationMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_CorporateMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.vw_affiliatedclubdetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.view_subscriptiontaggingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membertypeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBSCRIPTIONMASTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_membertypeconversionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_MEMBERLEDGERRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SubCategorymasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SubscriptionTaggingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.SUBSPOSTING1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.journalentryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_SUBS_SUMMARYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.membermasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_POS_SUMMARYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEMBER_CONSUMPTION_DETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.bengal_monthbillRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_BILLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.mm_reminderhistory_trialRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.View_DRCR_SUMRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.MEM_POS_DETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1.VIEW_WBSTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.mm_membermasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.MM_MEMDETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.SUBSPOSTINGTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_countrymasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_statemasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_CitymasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_chargemasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_ReasonMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_TitleMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_ProfessionalMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_MaritalStatusMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_DesignationMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_CorporateMasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.vw_affiliatedclubdetailsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.view_subscriptiontaggingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.membertypeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_SUBSCRIPTIONMASTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_membertypeconversionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_MEMBERLEDGERTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_SubCategorymasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.SubscriptionTaggingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.SUBSPOSTING1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.journalentryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_SUBS_SUMMARYTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.membermasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_POS_SUMMARYTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.MEMBER_CONSUMPTIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.MEMBER_CONSUMPTION_DETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.bengal_monthbillTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.mm_reminderhistoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.mm_reminderhistory_BILLTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.mm_reminderhistory_trialTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.View_DRCR_SUMTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.MEM_POS_DETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.VIEW_WBSTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Bengal_MemberMaster.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Bengal_MemberMaster.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Bengal_MemberMaster.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.UpdateAll(Bengal_MemberMaster.DataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.#ctor">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetBalanceCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetCustomerBalanceCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPasswordCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPermissionsCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.CreateCustomerCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.TransferCreditsCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.RequestSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSubAccountSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.SetSubAccountPasswordCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.DeleteSubAccountSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.DeleteSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetSenderNamesCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetDefaultSenderNameCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.ReadSMSCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.DeleteSMSCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.SendSMSCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.SendSMSExCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetSMSStatusCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.ImportContactCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.AddContactCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.UpdateContactCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.EchoCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.CheckUpdatesCompleted">
+	<remarks/>
+</member><member name="E:Bengal_MemberMaster.CalRef.Gateway.GetUpdateURLCompleted">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetBalance(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetBalanceAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetBalanceAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetCustomerBalance(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetCustomerBalanceAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetCustomerBalanceAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPassword(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPasswordAsync(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPasswordAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPermissions(System.String,System.String,System.String,Bengal_MemberMaster.CalRef.AccessPermissions[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPermissionsAsync(System.String,System.String,System.String,Bengal_MemberMaster.CalRef.AccessPermissions[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateCustomerPermissionsAsync(System.String,System.String,System.String,Bengal_MemberMaster.CalRef.AccessPermissions[],System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CreateCustomer(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,Bengal_MemberMaster.CalRef.AccessPermissions[],System.Boolean,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CreateCustomerAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,Bengal_MemberMaster.CalRef.AccessPermissions[],System.Boolean,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CreateCustomerAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,Bengal_MemberMaster.CalRef.AccessPermissions[],System.Boolean,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.TransferCredits(System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.TransferCreditsAsync(System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.TransferCreditsAsync(System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.RequestSenderName(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.RequestSenderNameAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.RequestSenderNameAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSenderName(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSenderNameAsync(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSenderNameAsync(System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSubAccountSenderName(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSubAccountSenderNameAsync(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetDefaultSubAccountSenderNameAsync(System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetSubAccountPassword(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetSubAccountPasswordAsync(System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SetSubAccountPasswordAsync(System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSubAccountSenderName(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSubAccountSenderNameAsync(System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSubAccountSenderNameAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSenderName(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSenderNameAsync(System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSenderNameAsync(System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSenderNames(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSenderNamesAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSenderNamesAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetDefaultSenderName(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetDefaultSenderNameAsync(System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetDefaultSenderNameAsync(System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ReadSMS(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ReadSMSAsync(System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ReadSMSAsync(System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSMS(System.String,System.String,System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSMSAsync(System.String,System.String,System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.DeleteSMSAsync(System.String,System.String,System.String[],System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMS(System.String,System.String,System.String[],System.String[],System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMSAsync(System.String,System.String,System.String[],System.String[],System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMSAsync(System.String,System.String,System.String[],System.String[],System.String[],System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMSEx(System.String,System.String,System.String[],System.String[],System.String[],System.DateTime)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMSExAsync(System.String,System.String,System.String[],System.String[],System.String[],System.DateTime)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.SendSMSExAsync(System.String,System.String,System.String[],System.String[],System.String[],System.DateTime,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSMSStatus(System.String,System.String,System.Int32[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSMSStatusAsync(System.String,System.String,System.Int32[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetSMSStatusAsync(System.String,System.String,System.Int32[],System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ImportContact(System.String,System.String,Bengal_MemberMaster.CalRef.Contact[],System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ImportContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact[],System.String[])">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.ImportContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact[],System.String[],System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.AddContact(System.String,System.String,Bengal_MemberMaster.CalRef.Contact,System.String,System.Int32@)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.AddContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact,System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.AddContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateContact(System.String,System.String,Bengal_MemberMaster.CalRef.Contact)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.UpdateContactAsync(System.String,System.String,Bengal_MemberMaster.CalRef.Contact,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.Echo(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.EchoAsync(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.EchoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CheckUpdates(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CheckUpdatesAsync(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CheckUpdatesAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetUpdateURL(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetUpdateURLAsync(System.String)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.GetUpdateURLAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:Bengal_MemberMaster.CalRef.Gateway.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.Gateway">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults.UserNotAReseller">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults.InvalidCustomerDetails">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageAddressBook">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.EditContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.DeleteContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ImportContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ExportContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ImportGroup">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.DeduplicateContact">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageUDF">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageDND">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateGroup">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateSMS">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateSMSFromFile">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageSchedules">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageTemplates">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageTags">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageSenderNames">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageKeywords">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageRules">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateFolder">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageFolders">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageCredits">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ViewLicenses">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ReportsDeliveryRatio">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ReportsDeliveryFailure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ReportsSMSSummary">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.Xapps">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.QuickBar">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.DeveloperResources">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ChangePassword">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageSecurity">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreateUser">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ManageUsers">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CopyPermissions">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.UserPreferences">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.AccountInformation">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ViewTools">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ViewReports">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.ViewAccounts">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.BuyNow">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.PerformaInvoices">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.Invoices">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.CreditNotes">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.Receipts">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AccessPermissions.SMSTariff">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.AccessPermissions">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdatePermissionsResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdatePermissionsResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdatePermissionsResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdatePermissionsResults.UserNotAReseller">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdatePermissionsResults.InvalidCustomerDetails">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdatePermissionsResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.MobileNumberExists">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.EmailExists">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.UserIDExists">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.InvalidCountry">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.UnknownError">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.UserNotAReseller">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.CannotMakeResellerUserInvalid">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.CannotMakeResellerNoPrimaryID">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.CannotMakeResellerUserNotInAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.CannotMakeResellerAlreadyReseller">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.CannotMakeResellerUnknownError">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddCustomerResults.SuccessInvalidSenderName">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.AddCustomerResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.InvalidCustomerDetails">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.InvalidCreditAmountSpecified">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.InsufficientBalance">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.TransferCreditsResults.CannotTransferToSelf">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.TransferCreditsResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.SetDefaultSenderNameResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.SetDefaultSenderNameResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.SetDefaultSenderNameResults.InvalidCustomerDetails">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.SetDefaultSenderNameResults.InvalidSenderName">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetDefaultSenderNameResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.DeleteSenderNameResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.DeleteSenderNameResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.DeleteSenderNameResults.InvalidCustomerDetails">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.DeleteSenderNameResults.InvalidSenderName">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.DeleteSenderNameResults.CannotDeleteDefaultSenderName">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSenderNameResults">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.ID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.UserID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.SenderName">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.Status">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.RequestedDate">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.ApprovedDate">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.ApprovedBy">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.Reason">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.IsDeleted">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.Customer">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.CreatedBy">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.CreatedOn">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.ModifiedBy">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SenderNames.ModifiedOn">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SenderNames">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.RegistrationStatus.Approved">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.RegistrationStatus.Pending">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.RegistrationStatus.Rejected">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.RegistrationStatus">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.CustomAttributes.Name">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.CustomAttributes.Display">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.CustomAttributes.Value">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.CustomAttributes">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.ID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.UserID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.FirstName">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Mobile">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.LastName">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.MiddleName">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Male">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.DateOfBirth">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.BloodGroup">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.AddressLine1">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.AddressLine2">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.AddressLine3">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.City">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.State">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Country">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.PostalCode">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Telephone">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Telephone2">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Fax">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.EmailOfficial">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.EmailPersonal">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Website">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Designation">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Department">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Company">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Remarks">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.ExpiresOn">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.EffectiveOn">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.Active">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.CreatedOn">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.ModifiedOn">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.CreatedBy">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.ModifiedBy">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.UID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.PAN">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.Contact.CustomProperties">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.Contact">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.MessageStatus.Status">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.MessageStatus.Delivered">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.MessageStatus.Reason">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.MessageStatus.ID">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.MessageStatus">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.MessageStatusValues.Queued">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.MessageStatusValues.Processing">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.MessageStatusValues.Sent">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.MessageStatusValues.Delivered">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.MessageStatusValues.Failed">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.MessageStatusValues">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.ReceivedDate">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.Content">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.Sender">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.ID">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.ServiceProvider">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.AreaOfOperation">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.IncomingMessage.Technology">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.IncomingMessage">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddContactResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddContactResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddContactResults.ContactDataInvalid">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddContactResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.AddContactResults.UnknownError">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.AddContactResults">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateContactResults.Success">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateContactResults.Failure">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateContactResults.ContactDataInvalid">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateContactResults.InvalidAccount">
+	<remarks/>
+</member><member name="F:Bengal_MemberMaster.CalRef.UpdateContactResults.UnknownError">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateContactResults">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetBalanceCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetBalanceCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetBalanceCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetCustomerBalanceCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetCustomerBalanceCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetCustomerBalanceCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateCustomerPasswordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateCustomerPermissionsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.UpdateCustomerPermissionsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateCustomerPermissionsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.CreateCustomerCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.CreateCustomerCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.CreateCustomerCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.TransferCreditsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.TransferCreditsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.TransferCreditsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.RequestSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.RequestSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.RequestSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetDefaultSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SetDefaultSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetDefaultSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetDefaultSubAccountSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SetDefaultSubAccountSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetDefaultSubAccountSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetSubAccountPasswordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SetSubAccountPasswordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SetSubAccountPasswordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSubAccountSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.DeleteSubAccountSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSubAccountSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.DeleteSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetSenderNamesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetSenderNamesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetSenderNamesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetDefaultSenderNameCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetDefaultSenderNameCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetDefaultSenderNameCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.ReadSMSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.ReadSMSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.ReadSMSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSMSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.DeleteSMSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.DeleteSMSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SendSMSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SendSMSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SendSMSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SendSMSExCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.SendSMSExCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.SendSMSExCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetSMSStatusCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetSMSStatusCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetSMSStatusCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.ImportContactCompletedEventHandler">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.AddContactCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.AddContactCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.AddContactCompletedEventArgs.ID">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.AddContactCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateContactCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.UpdateContactCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.UpdateContactCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.EchoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.EchoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.EchoCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.CheckUpdatesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.CheckUpdatesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.CheckUpdatesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetUpdateURLCompletedEventHandler">
+	<remarks/>
+</member><member name="P:Bengal_MemberMaster.CalRef.GetUpdateURLCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.CalRef.GetUpdateURLCompletedEventArgs">
+	<remarks/>
+</member><member name="T:Bengal_MemberMaster.DataSet2.membermasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_DRCR_SUMDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEM_POS_DETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VIEW_WBSTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_Recipt_DetCCLDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEMBER_CONSUMPTION_OUTLETDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VW_CommitteeTransactionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.membermasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_DRCR_SUMRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEM_POS_DETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VIEW_WBSTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_Recipt_DetCCLRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEMBER_CONSUMPTION_OUTLETRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VW_CommitteeTransactionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.membermasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_DRCR_SUMRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEM_POS_DETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VIEW_WBSTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.View_Recipt_DetCCLRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.MEMBER_CONSUMPTION_OUTLETRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2.VW_CommitteeTransactionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.membermasterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.View_DRCR_SUMTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.MEM_POS_DETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.VIEW_WBSTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.View_Recipt_DetCCLTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.MEMBER_CONSUMPTION_OUTLETTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.VW_CommitteeTransactionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Bengal_MemberMaster.DataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Bengal_MemberMaster.DataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Bengal_MemberMaster.DataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.UpdateAll(Bengal_MemberMaster.DataSet2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Bengal_MemberMaster.DataSet2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

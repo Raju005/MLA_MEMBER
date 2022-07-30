@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetBalanceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerBalanceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerOldPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerNewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCustomerPasswordResult" type="tns:UpdateCustomerPasswordResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="UpdateCustomerPasswordResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="UserNotAReseller" />
+          <s:enumeration value="InvalidCustomerDetails" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UpdateCustomerPermissions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Permissions" type="tns:ArrayOfAccessPermissions" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAccessPermissions">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AccessPermissions" type="tns:AccessPermissions" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="AccessPermissions">
+        <s:restriction base="s:string">
+          <s:enumeration value="ManageAddressBook" />
+          <s:enumeration value="CreateContact" />
+          <s:enumeration value="EditContact" />
+          <s:enumeration value="DeleteContact" />
+          <s:enumeration value="ImportContact" />
+          <s:enumeration value="ExportContact" />
+          <s:enumeration value="ImportGroup" />
+          <s:enumeration value="DeduplicateContact" />
+          <s:enumeration value="ManageUDF" />
+          <s:enumeration value="ManageDND" />
+          <s:enumeration value="CreateGroup" />
+          <s:enumeration value="CreateSMS" />
+          <s:enumeration value="CreateSMSFromFile" />
+          <s:enumeration value="ManageSchedules" />
+          <s:enumeration value="ManageTemplates" />
+          <s:enumeration value="ManageTags" />
+          <s:enumeration value="ManageSenderNames" />
+          <s:enumeration value="ManageKeywords" />
+          <s:enumeration value="ManageRules" />
+          <s:enumeration value="CreateFolder" />
+          <s:enumeration value="ManageFolders" />
+          <s:enumeration value="ManageCredits" />
+          <s:enumeration value="ViewLicenses" />
+          <s:enumeration value="ReportsDeliveryRatio" />
+          <s:enumeration value="ReportsDeliveryFailure" />
+          <s:enumeration value="ReportsSMSSummary" />
+          <s:enumeration value="Xapps" />
+          <s:enumeration value="QuickBar" />
+          <s:enumeration value="DeveloperResources" />
+          <s:enumeration value="ChangePassword" />
+          <s:enumeration value="ManageSecurity" />
+          <s:enumeration value="CreateUser" />
+          <s:enumeration value="ManageUsers" />
+          <s:enumeration value="CopyPermissions" />
+          <s:enumeration value="UserPreferences" />
+          <s:enumeration value="AccountInformation" />
+          <s:enumeration value="ViewTools" />
+          <s:enumeration value="ViewReports" />
+          <s:enumeration value="ViewAccounts" />
+          <s:enumeration value="BuyNow" />
+          <s:enumeration value="PerformaInvoices" />
+          <s:enumeration value="Invoices" />
+          <s:enumeration value="CreditNotes" />
+          <s:enumeration value="Receipts" />
+          <s:enumeration value="SMSTariff" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UpdateCustomerPermissionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateCustomerPermissionsResult" type="tns:UpdatePermissionsResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="UpdatePermissionsResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="UserNotAReseller" />
+          <s:enumeration value="InvalidCustomerDetails" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CreateCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsCustomerReseller" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="AccountVerificationRequired" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPermissions" type="tns:ArrayOfAccessPermissions" />
+            <s:element minOccurs="1" maxOccurs="1" name="TransferDefaultCredits" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="DefaultSenderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateCustomerResult" type="tns:AddCustomerResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="AddCustomerResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="MobileNumberExists" />
+          <s:enumeration value="EmailExists" />
+          <s:enumeration value="UserIDExists" />
+          <s:enumeration value="InvalidCountry" />
+          <s:enumeration value="UnknownError" />
+          <s:enumeration value="UserNotAReseller" />
+          <s:enumeration value="CannotMakeResellerUserInvalid" />
+          <s:enumeration value="CannotMakeResellerNoPrimaryID" />
+          <s:enumeration value="CannotMakeResellerUserNotInAccount" />
+          <s:enumeration value="CannotMakeResellerAlreadyReseller" />
+          <s:enumeration value="CannotMakeResellerUnknownError" />
+          <s:enumeration value="SuccessInvalidSenderName" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="TransferCredits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Credits" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransferCreditsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransferCreditsResult" type="tns:TransferCreditsResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="TransferCreditsResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="InvalidCustomerDetails" />
+          <s:enumeration value="InvalidCreditAmountSpecified" />
+          <s:enumeration value="InsufficientBalance" />
+          <s:enumeration value="CannotTransferToSelf" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="RequestSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequestSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestSenderNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="senderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetDefaultSenderNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultSubAccountSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SenderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetDefaultSubAccountSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetDefaultSubAccountSenderNameResult" type="tns:SetDefaultSenderNameResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="SetDefaultSenderNameResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="InvalidCustomerDetails" />
+          <s:enumeration value="InvalidSenderName" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SetSubAccountPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerNewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSubAccountPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetSubAccountPasswordResult" type="tns:UpdateCustomerPasswordResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubAccountSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerUserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ResellerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SenderName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSubAccountSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSubAccountSenderNameResult" type="tns:DeleteSenderNameResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="DeleteSenderNameResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="InvalidCustomerDetails" />
+          <s:enumeration value="InvalidSenderName" />
+          <s:enumeration value="CannotDeleteDefaultSenderName" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="DeleteSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="senderID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSenderNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSenderNames">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSenderNamesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSenderNamesResult" type="tns:ArrayOfSenderNames" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSenderNames">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SenderNames" nillable="true" type="tns:SenderNames" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SenderNames">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SenderName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:RegistrationStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestedDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApprovedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApprovedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsDeleted" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Customer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedOn" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModifiedBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedOn" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="RegistrationStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Approved" />
+          <s:enumeration value="Pending" />
+          <s:enumeration value="Rejected" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetDefaultSenderName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefaultSenderNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetDefaultSenderNameResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReadSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReadSMSResult" type="tns:ArrayOfIncomingMessage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfIncomingMessage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IncomingMessage" nillable="true" type="tns:IncomingMessage" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IncomingMessage">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReceivedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceProvider" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AreaOfOperation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Technology" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DeleteSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageID" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DeleteSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteSMSResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="allnumbers" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="allsms" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="allfrom" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendSMSEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="allnumbers" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="allsms" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="allfrom" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="scheduleTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSExResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageIDs" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMSStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSMSStatusResult" type="tns:ArrayOfMessageStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMessageStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MessageStatus" nillable="true" type="tns:MessageStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MessageStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:MessageStatusValues" />
+          <s:element minOccurs="0" maxOccurs="1" name="Delivered" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MessageStatusValues">
+        <s:restriction base="s:string">
+          <s:enumeration value="Queued" />
+          <s:enumeration value="Processing" />
+          <s:enumeration value="Sent" />
+          <s:enumeration value="Delivered" />
+          <s:enumeration value="Failed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ImportContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contacts" type="tns:ArrayOfContact" />
+            <s:element minOccurs="0" maxOccurs="1" name="groups" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfContact">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="tns:Contact" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Contact">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mobile" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MiddleName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Male" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateOfBirth" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="BloodGroup" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telephone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telephone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailOfficial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailPersonal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Website" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Designation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpiresOn" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EffectiveOn" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Active" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatedOn" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ModifiedOn" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModifiedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PAN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomProperties" type="tns:ArrayOfCustomAttributes" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCustomAttributes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomAttributes" nillable="true" type="tns:CustomAttributes" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomAttributes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Display" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ImportContactResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+            <s:element minOccurs="0" maxOccurs="1" name="addressGroups" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddContactResult" type="tns:AddContactResults" />
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="AddContactResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="ContactDataInvalid" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="UnknownError" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UpdateContact">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateContactResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateContactResult" type="tns:UpdateContactResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="UpdateContactResults">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failure" />
+          <s:enumeration value="ContactDataInvalid" />
+          <s:enumeration value="InvalidAccount" />
+          <s:enumeration value="UnknownError" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="Echo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="handshake" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EchoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EchoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUpdates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currentVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUpdatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckUpdatesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateURL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="currentVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUpdateURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPassword" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPermissionsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPermissions" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerPermissionsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="CreateCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransferCreditsSoapIn">
+    <wsdl:part name="parameters" element="tns:TransferCredits" />
+  </wsdl:message>
+  <wsdl:message name="TransferCreditsSoapOut">
+    <wsdl:part name="parameters" element="tns:TransferCreditsResponse" />
+  </wsdl:message>
+  <wsdl:message name="RequestSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:RequestSenderName" />
+  </wsdl:message>
+  <wsdl:message name="RequestSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:RequestSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDefaultSenderName" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDefaultSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultSubAccountSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:SetDefaultSubAccountSenderName" />
+  </wsdl:message>
+  <wsdl:message name="SetDefaultSubAccountSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:SetDefaultSubAccountSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSubAccountPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSubAccountPassword" />
+  </wsdl:message>
+  <wsdl:message name="SetSubAccountPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSubAccountPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubAccountSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSubAccountSenderName" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSubAccountSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSubAccountSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSenderName" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSenderNamesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSenderNames" />
+  </wsdl:message>
+  <wsdl:message name="GetSenderNamesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSenderNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultSenderNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultSenderName" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultSenderNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultSenderNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReadSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:ReadSMS" />
+  </wsdl:message>
+  <wsdl:message name="ReadSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:ReadSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSMS" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSEx" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSExResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSMSStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetSMSStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSMSStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportContactSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportContact" />
+  </wsdl:message>
+  <wsdl:message name="ImportContactSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddContactSoapIn">
+    <wsdl:part name="parameters" element="tns:AddContact" />
+  </wsdl:message>
+  <wsdl:message name="AddContactSoapOut">
+    <wsdl:part name="parameters" element="tns:AddContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateContactSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateContact" />
+  </wsdl:message>
+  <wsdl:message name="UpdateContactSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="EchoSoapIn">
+    <wsdl:part name="parameters" element="tns:Echo" />
+  </wsdl:message>
+  <wsdl:message name="EchoSoapOut">
+    <wsdl:part name="parameters" element="tns:EchoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUpdatesSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUpdates" />
+  </wsdl:message>
+  <wsdl:message name="CheckUpdatesSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUpdatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateURLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUpdateURL" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateURLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUpdateURLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GatewaySoap">
+    <wsdl:operation name="GetBalance">
+      <wsdl:input message="tns:GetBalanceSoapIn" />
+      <wsdl:output message="tns:GetBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerBalance">
+      <wsdl:input message="tns:GetCustomerBalanceSoapIn" />
+      <wsdl:output message="tns:GetCustomerBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <wsdl:input message="tns:UpdateCustomerPasswordSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPermissions">
+      <wsdl:input message="tns:UpdateCustomerPermissionsSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerPermissionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustomer">
+      <wsdl:input message="tns:CreateCustomerSoapIn" />
+      <wsdl:output message="tns:CreateCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransferCredits">
+      <wsdl:input message="tns:TransferCreditsSoapIn" />
+      <wsdl:output message="tns:TransferCreditsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestSenderName">
+      <wsdl:input message="tns:RequestSenderNameSoapIn" />
+      <wsdl:output message="tns:RequestSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSenderName">
+      <wsdl:input message="tns:SetDefaultSenderNameSoapIn" />
+      <wsdl:output message="tns:SetDefaultSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSubAccountSenderName">
+      <wsdl:input message="tns:SetDefaultSubAccountSenderNameSoapIn" />
+      <wsdl:output message="tns:SetDefaultSubAccountSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSubAccountPassword">
+      <wsdl:input message="tns:SetSubAccountPasswordSoapIn" />
+      <wsdl:output message="tns:SetSubAccountPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubAccountSenderName">
+      <wsdl:input message="tns:DeleteSubAccountSenderNameSoapIn" />
+      <wsdl:output message="tns:DeleteSubAccountSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSenderName">
+      <wsdl:input message="tns:DeleteSenderNameSoapIn" />
+      <wsdl:output message="tns:DeleteSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSenderNames">
+      <wsdl:input message="tns:GetSenderNamesSoapIn" />
+      <wsdl:output message="tns:GetSenderNamesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultSenderName">
+      <wsdl:input message="tns:GetDefaultSenderNameSoapIn" />
+      <wsdl:output message="tns:GetDefaultSenderNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadSMS">
+      <wsdl:input message="tns:ReadSMSSoapIn" />
+      <wsdl:output message="tns:ReadSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMS">
+      <wsdl:input message="tns:DeleteSMSSoapIn" />
+      <wsdl:output message="tns:DeleteSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input message="tns:SendSMSSoapIn" />
+      <wsdl:output message="tns:SendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <wsdl:input message="tns:SendSMSExSoapIn" />
+      <wsdl:output message="tns:SendSMSExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <wsdl:input message="tns:GetSMSStatusSoapIn" />
+      <wsdl:output message="tns:GetSMSStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportContact">
+      <wsdl:input message="tns:ImportContactSoapIn" />
+      <wsdl:output message="tns:ImportContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <wsdl:input message="tns:AddContactSoapIn" />
+      <wsdl:output message="tns:AddContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:input message="tns:UpdateContactSoapIn" />
+      <wsdl:output message="tns:UpdateContactSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <wsdl:input message="tns:EchoSoapIn" />
+      <wsdl:output message="tns:EchoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUpdates">
+      <wsdl:input message="tns:CheckUpdatesSoapIn" />
+      <wsdl:output message="tns:CheckUpdatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateURL">
+      <wsdl:input message="tns:GetUpdateURLSoapIn" />
+      <wsdl:output message="tns:GetUpdateURLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GatewaySoap" type="tns:GatewaySoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBalance">
+      <soap:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerBalance">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPermissions">
+      <soap:operation soapAction="http://tempuri.org/UpdateCustomerPermissions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustomer">
+      <soap:operation soapAction="http://tempuri.org/CreateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferCredits">
+      <soap:operation soapAction="http://tempuri.org/TransferCredits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestSenderName">
+      <soap:operation soapAction="http://tempuri.org/RequestSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSenderName">
+      <soap:operation soapAction="http://tempuri.org/SetDefaultSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSubAccountSenderName">
+      <soap:operation soapAction="http://tempuri.org/SetDefaultSubAccountSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSubAccountPassword">
+      <soap:operation soapAction="http://tempuri.org/SetSubAccountPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubAccountSenderName">
+      <soap:operation soapAction="http://tempuri.org/DeleteSubAccountSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSenderName">
+      <soap:operation soapAction="http://tempuri.org/DeleteSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSenderNames">
+      <soap:operation soapAction="http://tempuri.org/GetSenderNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultSenderName">
+      <soap:operation soapAction="http://tempuri.org/GetDefaultSenderName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSMS">
+      <soap:operation soapAction="http://tempuri.org/ReadSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMS">
+      <soap:operation soapAction="http://tempuri.org/DeleteSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <soap:operation soapAction="http://tempuri.org/SendSMSEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <soap:operation soapAction="http://tempuri.org/GetSMSStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportContact">
+      <soap:operation soapAction="http://tempuri.org/ImportContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <soap:operation soapAction="http://tempuri.org/AddContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <soap:operation soapAction="http://tempuri.org/UpdateContact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <soap:operation soapAction="http://tempuri.org/Echo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUpdates">
+      <soap:operation soapAction="http://tempuri.org/CheckUpdates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateURL">
+      <soap:operation soapAction="http://tempuri.org/GetUpdateURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GatewaySoap12" type="tns:GatewaySoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPassword">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomerPermissions">
+      <soap12:operation soapAction="http://tempuri.org/UpdateCustomerPermissions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCustomer">
+      <soap12:operation soapAction="http://tempuri.org/CreateCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransferCredits">
+      <soap12:operation soapAction="http://tempuri.org/TransferCredits" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestSenderName">
+      <soap12:operation soapAction="http://tempuri.org/RequestSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSenderName">
+      <soap12:operation soapAction="http://tempuri.org/SetDefaultSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDefaultSubAccountSenderName">
+      <soap12:operation soapAction="http://tempuri.org/SetDefaultSubAccountSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSubAccountPassword">
+      <soap12:operation soapAction="http://tempuri.org/SetSubAccountPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSubAccountSenderName">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSubAccountSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSenderName">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSenderNames">
+      <soap12:operation soapAction="http://tempuri.org/GetSenderNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultSenderName">
+      <soap12:operation soapAction="http://tempuri.org/GetDefaultSenderName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadSMS">
+      <soap12:operation soapAction="http://tempuri.org/ReadSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSMS">
+      <soap12:operation soapAction="http://tempuri.org/DeleteSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMSStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetSMSStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportContact">
+      <soap12:operation soapAction="http://tempuri.org/ImportContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddContact">
+      <soap12:operation soapAction="http://tempuri.org/AddContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <soap12:operation soapAction="http://tempuri.org/UpdateContact" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Echo">
+      <soap12:operation soapAction="http://tempuri.org/Echo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUpdates">
+      <soap12:operation soapAction="http://tempuri.org/CheckUpdates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateURL">
+      <soap12:operation soapAction="http://tempuri.org/GetUpdateURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Gateway">
+    <wsdl:port name="GatewaySoap" binding="tns:GatewaySoap">
+      <soap:address location="http://smsc.smsconnexion.com/api/gateway.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GatewaySoap12" binding="tns:GatewaySoap12">
+      <soap12:address location="http://smsc.smsconnexion.com/api/gateway.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
