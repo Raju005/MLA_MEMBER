@@ -1647,6 +1647,28 @@ Public Class MDIParent1
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub MenuItem66_Click(sender As Object, e As EventArgs) Handles MenuItem66.Click
+        GmoduleName = "BILLSETUP"
+        Try
+            If Not (Me.ActiveMdiChild Is Nothing) Then
+                Me.ActiveMdiChild.Close()
+            End If
+            Dim SUBPOS As New POSFUNDMASTER
+            SUBPOS.Show()
+            SUBPOS.MdiParent = Me
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub MenuItem39_Click(sender As Object, e As EventArgs) Handles MenuItem39.Click
+
+    End Sub
+
+    Private Sub MenuItem20_Click(sender As Object, e As EventArgs) Handles MenuItem20.Click
+
+    End Sub
 End Class
 
 

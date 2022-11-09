@@ -743,6 +743,9 @@
     <Compile Include="MASTERS\MARTIALSTATUS_MASTER.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MASTERS\POSFUNDMASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MASTERS\PROFESSION_MASTER.designer.vb">
       <DependentUpon>PROFESSION_MASTER.vb</DependentUpon>
     </Compile>
@@ -1322,6 +1325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MASTERS\MARTIALSTATUS_MASTER.resx">
       <DependentUpon>MARTIALSTATUS_MASTER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MASTERS\POSFUNDMASTER.resx">
+      <DependentUpon>POSFUNDMASTER.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MASTERS\PROFESSION_MASTER.resx">
       <DependentUpon>PROFESSION_MASTER.vb</DependentUpon>

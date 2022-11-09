@@ -101,6 +101,7 @@ Partial Class MDIParent1
         Me.MenuItem50 = New System.Windows.Forms.MenuItem()
         Me.MenuItem62 = New System.Windows.Forms.MenuItem()
         Me.MenuItem63 = New System.Windows.Forms.MenuItem()
+        Me.MenuItem64 = New System.Windows.Forms.MenuItem()
         Me.MenuItem24 = New System.Windows.Forms.MenuItem()
         Me.MenuItem25 = New System.Windows.Forms.MenuItem()
         Me.MenuItem28 = New System.Windows.Forms.MenuItem()
@@ -151,7 +152,7 @@ Partial Class MDIParent1
         Me.MenuItem77 = New System.Windows.Forms.MenuItem()
         Me.MenuItem78 = New System.Windows.Forms.MenuItem()
         Me.MenuItem79 = New System.Windows.Forms.MenuItem()
-        Me.MenuItem64 = New System.Windows.Forms.MenuItem()
+        Me.MenuItem66 = New System.Windows.Forms.MenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -448,7 +449,7 @@ Partial Class MDIParent1
         'MenuItem1
         '
         Me.MenuItem1.Index = 0
-        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem2, Me.MenuItem3, Me.MenuItem4, Me.MenuItem5, Me.MenuItem6, Me.MenuItem7, Me.MenuItem8, Me.MenuItem9, Me.MenuItem10, Me.MenuItem11, Me.MenuItem12, Me.MenuItem13, Me.MenuItem14, Me.MenuItem16, Me.MenuItem17, Me.MenuItem82, Me.MenuItem18, Me.MenuItem15, Me.MenuItem19, Me.MenuItem21, Me.MenuItem20, Me.MenuItem26, Me.MenuItem39, Me.MenuItem42, Me.MenuItem50, Me.MenuItem62, Me.MenuItem63, Me.MenuItem64})
+        Me.MenuItem1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem2, Me.MenuItem3, Me.MenuItem4, Me.MenuItem5, Me.MenuItem6, Me.MenuItem7, Me.MenuItem8, Me.MenuItem9, Me.MenuItem10, Me.MenuItem11, Me.MenuItem12, Me.MenuItem13, Me.MenuItem14, Me.MenuItem16, Me.MenuItem17, Me.MenuItem82, Me.MenuItem18, Me.MenuItem15, Me.MenuItem19, Me.MenuItem21, Me.MenuItem20, Me.MenuItem26, Me.MenuItem39, Me.MenuItem42, Me.MenuItem50, Me.MenuItem62, Me.MenuItem63, Me.MenuItem64, Me.MenuItem66})
         Me.MenuItem1.Text = "&MASTER"
         '
         'MenuItem2
@@ -605,6 +606,11 @@ Partial Class MDIParent1
         '
         Me.MenuItem63.Index = 26
         Me.MenuItem63.Text = "BULK CREDIT NOTE"
+        '
+        'MenuItem64
+        '
+        Me.MenuItem64.Index = 27
+        Me.MenuItem64.Text = "TEMPLATE MASTER"
         '
         'MenuItem24
         '
@@ -880,10 +886,10 @@ Partial Class MDIParent1
         Me.MenuItem79.Index = 0
         Me.MenuItem79.Text = "CLOSE"
         '
-        'MenuItem64
+        'MenuItem66
         '
-        Me.MenuItem64.Index = 27
-        Me.MenuItem64.Text = "TEMPLATE MASTER"
+        Me.MenuItem66.Index = 28
+        Me.MenuItem66.Text = "BILLSETUP"
         '
         'MDIParent1
         '
@@ -1034,5 +1040,6 @@ Partial Class MDIParent1
     Friend WithEvents MenuItem62 As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem63 As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem64 As System.Windows.Forms.MenuItem
+    Friend WithEvents MenuItem66 As System.Windows.Forms.MenuItem
 
 End Class
